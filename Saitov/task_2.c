@@ -13,7 +13,6 @@ void WriteInFile (int** nums, int count, FILE* output){
         fputc(nums[count-1][i],output);
         i++;}
         WriteInFile(nums, count-1, output);
-
     }
 }
 
@@ -24,7 +23,7 @@ FILE* openfile(FILE* file){
         scanf("%s", fname);
         file=fopen(fname, "rb");
     }
-    return file;
+ return file;
 }
 
 struct numbers ReadNums (FILE* file){
@@ -58,7 +57,7 @@ struct numbers ReadNums (FILE* file){
     }
     array.nums=nums;
     array.count=count;
-    return array;
+return array;
 }
 
 int main (void){
@@ -82,7 +81,7 @@ int main (void){
     free(array.nums[i]);
     free(array.nums);
 
-        return 0;
+return 0;
 }
 
 
