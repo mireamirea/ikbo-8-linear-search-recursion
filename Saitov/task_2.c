@@ -28,7 +28,7 @@ FILE* openfile(FILE* file){
 }
 
 struct numbers ReadNums (FILE* file){
-    int i, count=0, end, tmp, prevsign=(int) NULL;
+    int i, count=0, end, tmp, prevsign=' ';
     int** nums=NULL;
     struct numbers array;
 
