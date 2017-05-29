@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+int getnumber(unsigned long int number);
+
 int main(void)
 {
 	unsigned long int number = 29284;
